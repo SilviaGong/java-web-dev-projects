@@ -11,24 +11,28 @@ public class Main {
         // Press Alt+Enter with your caret at the highlighted text to see how
         // IntelliJ IDEA suggests fixing it.
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a string: ");
-        String inputString = scanner.nextLine();
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("Enter a string: ");
+//        String inputString = scanner.nextLine();
+//
+//        HashMap<String, Double> myStr = new HashMap<>();
 
 
-        HashMap<String, Double> myStr = new HashMap<>();
 
-        String myString = "If the product of two terms is zero then common sense says at least one of the two terms has to be zero to start with. So if you move all the terms over to one side, you can put the quadratics into a form that can be factored allowing that side of the equation to equal zero. Once you’ve done that, it’s pretty straightforward from there.";
+        String myString = "If the product of two terms is zero then common sense says at least one of the two terms has to be zero" +
+                " to start with. So if you move all the terms over to one side, you can put the quadratics into a form that can be factored allowing " +
+                "that side of the equation to equal zero. Once you’ve done that, it’s pretty straightforward from there.";
         char[] charactersInString = myString.toCharArray();
+        HashMap<string, interger> chars = new HashMap<>();
 
-        myStr.put();
+        HashMap<string,interger>
 
         int num = 0;
         // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (char c : charactersInString) {
+        for (int i = 0; i < charactersInString.length; i++) {
             // Press Shift+F9 to start debugging your code. We have set one breakpoint
             // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println(c);
+    chars.put(charactersInString[i],)
         }
     }
 }
