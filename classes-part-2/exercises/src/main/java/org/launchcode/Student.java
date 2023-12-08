@@ -30,17 +30,32 @@ public class Student {
 
 
     //TODO: Uncomment and complete the getGradeLevel method here:
-//    public String getGradeLevel() {
-//        // Determine the grade level of the student based on numberOfCredits
-//    }
+    public String getGradeLevel() {
+        if (numberOfCredits < 30) {
+            return "Freshman";
+        } else if (numberOfCredits < 60) {
+            return "Sophomore";
+        } else if (numberOfCredits < 90) {
+            return "Junior";
+        } else {
+            return "Senior";
+        }
+    }
 
-//     TODO: Complete the addGrade method.
+//TODO: Complete the addGrade method.
     public void addGrade(int courseCredits, double grade) {
-        // Update the appropriate fields: numberOfCredits, gpa
+        double currentQualityScore = gpa * numberOfCredits;
+        double newQualityScore = currentQualityScore + (courseCredits * grade);
+        numberOfCredits += courseCredits;
+        gpa = newQualityScore / numberOfCredits;
     }
 
     // TODO: Add your custom 'toString' method here. Make sure it returns a well-formatted String rather
     //  than just the class fields.
+    public String toString() {
+        return "Student{name='" + name + "', studentId=" + studentId +
+                ", numberOfCredits=" + numberOfCredits + ", gpa=" + gpa + '}';
+    }
 
     // TODO: Add your custom 'equals' method here. Consider which fields should match in order to call two
     //  Student objects equal.
@@ -79,6 +94,7 @@ public class Student {
 
     public static void main(String[] args) {
         Student sally = new Student("Sally",1,1,4.0);
+        Student yuman = new Student("Yuman", 12345, 1, 4.0);
         System.out.println("The Student class works! " + sally.getName() + " is a student!");
         System.out.println(sally);
         sally.addGrade(12, 3.5);
