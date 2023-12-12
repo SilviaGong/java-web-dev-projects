@@ -28,5 +28,11 @@ public class MenuItem {
     public void setNew(boolean aNew) {
         isNew = aNew;
     }
+
+    // Method to print the details of a menu item
+    public void printItem() {
+        System.out.println("Price:" + price+", Description:"+ description+", Category:"+category+", New:"+ (isNew ? "Yes" : "No"));
+    }
 }
+
 
