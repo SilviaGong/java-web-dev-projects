@@ -8,10 +8,6 @@ public class Main {
         ArrayList<Flavor> flavors = menu.getFlavors();
         ArrayList<Cone> cones = menu.getCones();
 
-        Ingredient ingredient = new Ingredient();
-        System.out.println(ingredient);
-
-
         System.out.println("Before:");
         for (Flavor flavor : flavors) {
             System.out.println(flavor.getName());
