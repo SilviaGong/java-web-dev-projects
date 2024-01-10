@@ -31,11 +31,6 @@ public abstract class BaseDisc implements OpticalDisc{
     }
 
     @Override
-    public void writeDataWithLaser() {
-        System.out.println("Data is being written to the disc using a laser.");
-    }
-
-    @Override
     public void readDataWithLaser() {
         System.out.println("Data is being read from the disc using a laser.");
     }
@@ -49,8 +44,4 @@ public abstract class BaseDisc implements OpticalDisc{
                 ", Disc Type: " + discType);
     }
 
-    @Override
-    public void ejectDisc() {
-        System.out.println("The disc was ejected.");
-    }
 }
